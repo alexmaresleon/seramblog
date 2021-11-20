@@ -78,11 +78,11 @@
                         <x-slot name="content">
                             <!-- Account Management -->
                             <h6 class="dropdown-header small text-muted">
-                                {{ __('Manage Account') }}
+                                {{ __('Manejo de la cuenta') }}
                             </h6>
 
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
-                                {{ __('Profile') }}
+                                {{ __('Perfil') }}
                             </x-jet-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -97,7 +97,7 @@
                             <x-jet-dropdown-link href="{{ route('logout') }}"
                                                  onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
-                                {{ __('Log out') }}
+                                {{ __('Cerrar sesión') }}
                             </x-jet-dropdown-link>
                             <form method="POST" id="logout-form" action="{{ route('logout') }}">
                                 @csrf
